@@ -20,14 +20,14 @@ public interface TodoDao {
     void deleteTodo(Todo todo);
 
     @Update
-    void updateTodo(Todo todo);
+    void update(Todo... todo);
 
-    @Query("SELECT * FROM todo")
+    @Query("SELECT * FROM todo ORDER BY id DESC")
     LiveData<List<Todo>> getAllTodos();
 
     @Query("SELECT * from todo LIMIT 1")
     Todo[] getAnyTodo();
 
-    @Query("SELECT * FROM todo WHERE id =:taskId")
-    LiveData<Todo> loadTaskById(int taskId);
+//    @Query("SELECT * FROM todo WHERE id =:taskId")
+//    LiveData<Todo> loadTaskById(int taskId);
 }
