@@ -1,7 +1,8 @@
-package com.example.todoapplication;
+package com.example.todoapplication.UI;
 
 import android.os.Bundle;
 
+import com.example.todoapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
