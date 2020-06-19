@@ -84,12 +84,12 @@ public class Todo {
     }
 
 
-//    @Ignore
-//    public Todo(int id, @NonNull String title, @NonNull String date, @NonNull String time, @NonNull String priority) {
-//        this.id = id;
-//        this.title = title;
-//        this.date = date;
-//        this.time = time;
-//        this.priority = priority;
-//    }
+    @Ignore
+    public Todo(int id, @NonNull String title, @NonNull String date, @NonNull String time, @NonNull String priority) {
+        this.id = id;
+        this.title = title;
+        this.date = date;
+        this.time = time;
+        this.priority = priority;
+    }
 }
